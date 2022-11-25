@@ -1,3 +1,4 @@
+package com.example;
 import org.junit.Test;
 import org.junit.Assert;
 import org.junit.runner.RunWith;
@@ -7,7 +8,7 @@ import java.util.List;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-import com.example.Cat;
+
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {

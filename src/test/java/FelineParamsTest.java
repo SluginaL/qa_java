@@ -1,9 +1,10 @@
+package com.example;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import com.example.Feline;
+
 
 @RunWith(Parameterized.class)
 public class FelineParamsTest {

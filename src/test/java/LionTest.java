@@ -1,3 +1,4 @@
+package com.example;
 import java.util.List;
 
 import org.junit.Assert;
@@ -9,8 +10,6 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.junit.Assert.assertTrue;
 
-import com.example.Feline;
-import com.example.Lion;
 
 
 @RunWith(MockitoJUnitRunner.class)
