@@ -15,8 +15,6 @@ import static org.junit.Assert.assertTrue;
 @RunWith(MockitoJUnitRunner.class)
 public class LionTest {
     private static final String validGender = "Самец";
-    private static final String invalidGender = "invalidGender";
-    private static final String exceptionMessage = "Используйте допустимые значения пола животного - самец или самка";
     @Mock
     private Feline feline;
 
