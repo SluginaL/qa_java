@@ -19,7 +19,8 @@ public class FelineTest {
         feline.getFamily();
         Mockito.verify(feline, Mockito.times(1)).getFamily();
         Mockito.when(feline.getFamily()).thenReturn("Кошачьи");
-        Assert.assertEquals("Кошачьи", feline.getFamily());
+        String expected = "Кошачьи";
+        Assert.assertEquals(expected, feline.getFamily());
     }
 
     @Test
@@ -28,7 +29,8 @@ public class FelineTest {
         Mockito.verify(feline).getKittens(Mockito.anyInt());
         Mockito.verify(feline, Mockito.times(1)).getKittens(1);
         Mockito.when(feline.getKittens(1)).thenReturn(1);
-        Assert.assertEquals(1, feline.getKittens(1));
+        int expected = 1;
+        Assert.assertEquals(expected, feline.getKittens(1));
     }
 
     @Test
@@ -43,7 +45,8 @@ public class FelineTest {
         feline.getKittens();
         Mockito.verify(feline, Mockito.times(1)).getKittens();
         Mockito.when(feline.getKittens()).thenReturn(1);
-        Assert.assertEquals(1, feline.getKittens());
+        int expected = 1;
+        Assert.assertEquals(expected, feline.getKittens());
 
     }
 }
