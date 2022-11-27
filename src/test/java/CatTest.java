@@ -32,5 +32,6 @@ public class CatTest {
         Mockito.when(cat.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         Assert.assertEquals(cat.getFood(), List.of("Животные", "Птицы", "Рыба"));
     }
+    //тест
 }
 
