@@ -16,7 +16,7 @@ public class FelineTest {
     Feline feline;
 
     @Test
-    public void returnGetFamily() {
+    public void retrieveGetFamily() {
         feline.getFamily();
         Mockito.verify(feline, Mockito.times(1)).getFamily();
         Mockito.when(feline.getFamily()).thenReturn("Кошачьи");
@@ -25,7 +25,7 @@ public class FelineTest {
     }
 
     @Test
-    public void returnGetKittens() {
+    public void retrieveGetKittens() {
         feline.getKittens(1);
         Mockito.verify(feline).getKittens(Mockito.anyInt());
         Mockito.verify(feline, Mockito.times(1)).getKittens(1);
@@ -42,7 +42,7 @@ public class FelineTest {
 
 
     @Test
-    public void returnGetKittensWithoutArg() {
+    public void retrieveGetKittensWithoutArg() {
         feline.getKittens();
         Mockito.verify(feline, Mockito.times(1)).getKittens();
         Mockito.when(feline.getKittens()).thenReturn(1);

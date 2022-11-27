@@ -17,7 +17,7 @@ public class CatTest {
     Cat cat;
 
     @Test
-    public void returnGetSound() {
+    public void retrieveGetSound() {
         cat.getSound();
         Mockito.verify(cat, Mockito.times(1)).getSound();
         Mockito.when(cat.getSound()).thenReturn("Мяу");
@@ -26,7 +26,7 @@ public class CatTest {
     }
 
     @Test
-    public void returnGetFood() throws Exception {
+    public void retrieveGetFood() throws Exception {
         cat.getFood();
         Mockito.verify(cat, Mockito.times(1)).getFood();
         Mockito.when(cat.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
